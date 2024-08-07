@@ -1,0 +1,7 @@
+[submodule "chatbot-server"]
+    path = chatbot-server
+    url = https://github.com/username/chatbot-server.git
+
+[submodule "qualitybrain-website-by-tn"]
+    path = qualitybrain-website-by-tn
+    url = https://github.com/username/qualitybrain-website-by-tn.git
