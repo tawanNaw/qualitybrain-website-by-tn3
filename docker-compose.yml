@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  chatbot-server:
+    build:
+      context: ./chatbot-server
+      dockerfile: Dockerfile
+    ports:
+      - "5005:5005"
+    networks:
+      - chatbot-network
+
+  qualitybrain-website-by-tn:
+    build:
+      context: ./qualitybrain-website-by-tn
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    networks:
+      - chatbot-network
+
+networks:
+  chatbot-network:
+    driver: bridge
